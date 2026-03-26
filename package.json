@@ -1,0 +1,29 @@
+{
+  "type": "module",
+  "scripts": {
+    "prepare": "husky",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier . --write",
+    "format:check": "prettier . --check"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.1.0",
+    "eslint-config-prettier": "^10.1.8",
+    "globals": "^17.4.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.4.0",
+    "prettier": "^3.8.1",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.57.2"
+  },
+  "lint-staged": {
+    "*.{js,cjs,mjs,ts,tsx,jsx,json,md,css,scss,html,yml,yaml}": [
+      "prettier --write"
+    ],
+    "*.{js,cjs,mjs,ts,tsx,jsx}": [
+      "eslint --fix"
+    ]
+  }
+}

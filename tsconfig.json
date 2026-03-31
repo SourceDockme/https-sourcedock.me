@@ -8,5 +8,5 @@
     "noEmit": true,
     "strict": false
   },
-  "include": ["public/**/*.js", "*.js"]
+  "include": ["public/**/*.js", "*.js", "public/script/index.jsx"]
 }

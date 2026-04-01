@@ -1,27 +1,21 @@
-import js from "@eslint/js";
-import globals from "globals";
-import tseslint from "typescript-eslint";
-import eslintConfigPrettier from "eslint-config-prettier/flat";
+import js from '@eslint/js';
+import eslintConfigPrettier from 'eslint-config-prettier/flat';
+import globals from 'globals';
+import tseslint from 'typescript-eslint';
 
 export default tseslint.config(
   {
-    ignores: [
-      "dist/**",
-      "build/**",
-      ".next/**",
-      "coverage/**",
-      "node_modules/**",
-    ],
+    ignores: ['dist/**', 'build/**', '.next/**', 'coverage/**', 'node_modules/**'],
   },
 
   js.configs.recommended,
   ...tseslint.configs.recommendedTypeChecked,
 
   {
-    files: ["**/*.{ts,tsx,js,jsx,mjs,cjs}"],
+    files: ['**/*.{ts,tsx,js,jsx,mjs,cjs}'],
     languageOptions: {
-      ecmaVersion: "latest",
-      sourceType: "module",
+      ecmaVersion: 'latest',
+      sourceType: 'module',
       globals: {
         ...globals.browser,
         ...globals.node,
@@ -31,23 +25,23 @@ export default tseslint.config(
       },
     },
     rules: {
-      "no-console": "warn",
-      "no-debugger": "warn",
-      "no-var": "error",
-      "prefer-const": "error",
-      eqeqeq: ["error", "always"],
-      curly: ["error", "all"],
+      'no-console': 'warn',
+      'no-debugger': 'warn',
+      'no-var': 'error',
+      'prefer-const': 'error',
+      eqeqeq: ['error', 'always'],
+      curly: ['error', 'multi-line'],
 
-      "@typescript-eslint/no-unused-vars": [
-        "warn",
+      '@typescript-eslint/no-unused-vars': [
+        'warn',
         {
-          argsIgnorePattern: "^_",
-          varsIgnorePattern: "^_",
-          caughtErrorsIgnorePattern: "^_",
+          argsIgnorePattern: '^_',
+          varsIgnorePattern: '^_',
+          caughtErrorsIgnorePattern: '^_',
         },
       ],
     },
   },
 
-  eslintConfigPrettier,
+  eslintConfigPrettier
 );

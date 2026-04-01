@@ -3,14 +3,186 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
-    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
-    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-
-    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css"
+    />
+    <link rel="stylesheet" href="/public/css/main.css" />
+    <title>Personal Portfolio #7 | AsmrProg</title>
   </head>
+
   <body>
-    <div class="jsx" id="jsx"></div>
+    <nav>
+      <div class="logo">
+        <img src="src/icon/logo.jpeg" />
+        <a href="#">SourceDock</a>
+      </div>
+      <!-- <div class="nav-links">
+        <a href="#">Курсы</a>
+        <a href="#">Проекты</a>
+        <a href="#">Блог</a>
+      </div> -->
+      <!-- <button><i class="ri-github-fill"></i> My Projects</button> -->
+    </nav>
+
+    <div class="hero">
+      <div class="left-section">
+        <div class="top">
+          <h2>Я Frontend Developer Engineer</h2>
+          <p>
+            Увлечен созданием современных, отзывчивых и удобных веб-сайтов и приложений. Имею опыт в
+            работе с
+          </p>
+          <div class="toolsandlanguage">
+            <img src="src/icon/html5-original.svg" alt="" width="24px" />
+            <img src="src/icon/css3-original.svg" alt="" width="24px" />
+            <img src="src/icon/javascript-original.svg" alt="" width="24px" />
+            <img
+              src="src/icon/68747470733a2f2f7777772e766563746f726c6f676f2e7a6f6e652f6c6f676f732f6769742d73636d2f6769742d73636d2d69636f6e2e737667.svg"
+              alt=""
+              width="24px"
+            />
+            <img src="src/icon/react-original.svg" alt="" width="24px" />
+            <img
+              src="src/icon/68747470733a2f2f7777772e766563746f726c6f676f2e7a6f6e652f6c6f676f732f7461696c77696e646373732f7461696c77696e646373732d69636f6e2e737667.svg"
+              alt=""
+              width="24px"
+            />
+            <img
+              src="src/icon/68747470733a2f2f7777772e766563746f726c6f676f2e7a6f6e652f6c6f676f732f6669676d612f6669676d612d69636f6e2e737667.svg"
+              alt=""
+              width="24px"
+            />
+          </div>
+
+          <div class="buttons">
+            <button class="doc" id="my-project-header">
+              Мои проекты<i class="ri-arrow-right-line"></i>
+            </button>
+            <button class="git">
+              <i class="ri-github-fill"></i><a href="https://github.com/SourceDockme"> Github</a>
+            </button>
+          </div>
+        </div>
+        <div class="bottom">
+          <p>Other Socials:</p>
+          <div class="icons">
+            <i class="ri-telegram-line"></i>
+            <i class="ri-github-line"></i>
+          </div>
+        </div>
+      </div>
+
+      <img src="src/image/hero.png" />
+    </div>
+
+    <div class="about">
+      <p>Мини-курсы</p>
+      <h2>
+        Я создал для вас свои мини-курсы по всем мною изученных языках программирования и
+        библеотеках
+      </h2>
+      <div class="items">
+        <div class="item" id="item">
+          <div class="inner">
+            <img src="src/icon/html5-original.svg" />
+            <a href="#">HTML</a>
+            <p>
+              В курсе я расскажу про основные возможности языка программирования HTML, покажу, что
+              можно написать с его помощью и сделаем с вами каркас для последущих курсов
+            </p>
+          </div>
+        </div>
+        <div class="item" id="item">
+          <div class="inner">
+            <img src="src/icon/css3-original.svg" />
+            <a href="#">CSS</a>
+            <p>
+              В курсе я расскажу про основные возможности языка программирования CSS, мы сделаем
+              первый, стильный дизайн нашему каркасу, который уже можно будет использовать на своем
+              сайте
+            </p>
+          </div>
+        </div>
+        <div class="item" id="item">
+          <div class="inner">
+            <img src="src/icon/javascript-original.svg" />
+            <a href="#">JavaScript + React</a>
+            <p>
+              В курсе я расскажу про основные возможности языка программирования JavaScript и
+              библеотеку React, обсудим зачем они нужны и что можно с их помощью сделать
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="projects">
+      <div class="inner">
+        <p class="debug"><i class="ri-command-line"></i> Инструменты и разработка</p>
+        <h2>Программы для программирования</h2>
+        <p class="info">
+          Вы можете использовать любой редактор кода или прораммы, все зависит от вас. Пользуйтесь
+          тем, что вам по настоящему удобно, хоть "блокнотом"
+        </p>
+        <button>Установить программы <i class="ri-arrow-right-line"></i></button>
+
+        <div class="items">
+          <div class="item">
+            <img
+              src="src/icon/microsoft_visual_studio_code_alt_macos_bigsur_icon_189953.png"
+              alt=""
+              width="60px"
+            />
+            <a href="https://code.visualstudio.com">Visual Studio Code</a>
+            <p>Текстовый редактор, разработанный Microsoft для Windows, Linux и macOS.</p>
+          </div>
+          <div class="item host">
+            <img src="src/icon/d96126f7b669e905c00a51b782202fc5.svg" alt="" width="70px" />
+            <a href="https://timeweb.cloud/r/ax132069">Timeweb<span class="twc">>Cloud</span></a>
+            <p>облачная инфраструктура для бизнеса.</p>
+          </div>
+          <div class="item">
+            <img
+              src="src/icon/68747470733a2f2f7777772e766563746f726c6f676f2e7a6f6e652f6c6f676f732f6669676d612f6669676d612d69636f6e2e737667.svg"
+              alt=""
+              width="60px"
+            />
+            <a href="https://www.figma.com">Figma</a>
+            <p>Онлайн-сервис для разработки интерфейсов.</p>
+          </div>
+          <div class="item">
+            <img src="src/icon/Telegram_2019_Logo.svg.png" alt="" width="60px" />
+            <a href="https://telegram.org">Telegram</a>
+            <p>Кроссплатформенный мессенджер с функциями соцсети.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact">
+      <h2>Хотите сделать заказ на создание сайта ?</h2>
+      <div class="items">
+        <div class="item">
+          <a href="#">Напишите мне</a>
+          <p>@goryaschevGV</p>
+          <button>Написать</button>
+        </div>
+        <div class="item">
+          <a href="#">Напишите в комментарияз</a>
+          <p>@SourceDockme</p>
+          <button>Перейти в чат канала</button>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <!-- <a href="#">Курсы</a>
+        <a href="#">Проекты</a>
+        <a href="#">Блог</a> -->
+      <a href="#" id="MITLicense">MIT license</a>
+      <p>2026 SourceDock™</p>
+    </footer>
   </body>
-  <script src="public/script/index.jsx" type="text/babel"></script>
+  <script src="public/script/main.js"></script>
 </html>
